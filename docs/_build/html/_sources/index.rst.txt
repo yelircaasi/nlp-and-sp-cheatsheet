@@ -1,13 +1,24 @@
-========================================
-Natural Language Processing and Speech Processing Cheatsheet
-========================================
+=========================================
+Speech and Language Processing Cheatsheet
+=========================================
 
 Brief overview of concepts in computational linguistics (and neighboring areas) with explanations, illustrations, code snippets, and useful links.
 
 .. warning::
 
     This document is under early stage development. If you find errors or omissions, please raise an `issue <https://github.com/yelircaasi/nlp-and-sp-cheatsheet/issues>`_ or `contribute <https://github.com/yelircaasi/nlp-and-sp-cheatsheet/blob/master/README.md>`_ a better definition!
-    
+
+.. toctree::
+    :caption: Mathematical Preliminaries
+    :maxdepth: 1
+
+    calculus
+    optimization
+    linear_algebra
+    probability
+    statistics
+    math_notation
+   
 .. toctree::
     :caption: NLP Basics
     :maxdepth: 1
@@ -36,24 +47,13 @@ Brief overview of concepts in computational linguistics (and neighboring areas) 
     voice_conversion
     
 .. toctree::
-    :caption: Mathematical Preliminaries
-    :maxdepth: 1
-
-    calculus
-    optimization
-    linear_algebra
-    probability
-    statistics
-    math_notation
-
-.. toctree::
     :maxdepth: 1
     :caption: Neural Networks
 
     nn_building_blocks
     nn_architectures_basic
     nn_architecures_nlp
-    nn_architectures_sp
+    nn_architectures_speech
     
 .. toctree::
     :maxdepth: 1
@@ -64,10 +64,17 @@ Brief overview of concepts in computational linguistics (and neighboring areas) 
     
 .. toctree::
     :caption: Speech Algorithms
+    :maxdepth: 1
     
     fast_fourier_transform
     gmm
     gmm_hmm
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Miscellaneous Topics
+
+    reinforcement_learning
 
 .. toctree::
     :maxdepth: 1
