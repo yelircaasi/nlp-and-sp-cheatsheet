@@ -1,0 +1,59 @@
+exclude: ".html|poetry.lock"
+
+default_language_version:
+    python: python3.10
+
+repos:
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: "v2.4.0"
+    hooks:
+      - id: conventional-pre-commit
+        stages: ["commit-msg"]
+        args: ["feat", "fix", "chore", "test"]
+
+  - repo: https://github.com/FHPythonUtils/LicenseCheck
+    rev: "2023.5.1"
+    hooks:
+    - id: licensecheck
+      args: ["--file", "/tmp/license-check.txt",
+             "--ignore-licenses", "apache",
+             "&&", "git", "diff", "/tmp/license-check.txt", "license-check.txt"]
+
+  - repo: https://github.com/PyCQA/isort
+    rev: "5.12.0"
+    hooks:
+    - id: isort
+      args: ["--profile", "black", "."]
+
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.17
+    hooks:
+    - id: mdformat
+      additional_dependencies:
+      - mdformat-gfm
+      - mdformat-black
+
+  - repo: https://github.com/psf/black
+    rev: "23.11.0"
+    hooks:
+    - id: black
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+    - id: check-added-large-files
+    - id: check-ast
+    - id: check-builtin-literals
+    - id: check-case-conflict
+    - id: check-docstring-first
+    - id: check-merge-conflict
+    - id: check-shebang-scripts-are-executable
+    - id: check-toml
+    - id: check-vcs-permalinks
+    - id: check-yaml
+    - id: debug-statements
+    - id: destroyed-symlinks
+    - id: detect-private-key
+    - id: end-of-file-fixer
+    - id: mixed-line-ending
+    - id: trailing-whitespace
