@@ -2,12 +2,19 @@
 Speech and Language Processing Cheatsheet
 =========================================
 
-Brief overview of concepts in computational linguistics (and neighboring areas) with explanations, illustrations, code snippets, and useful links.
+Brief overview of concepts in computational linguistics (and neighboring areas) with explanations, illustrations, code
+snippets, and useful links.
 
 .. warning::
-    This resource is intended to provide an accessible introdution to the subject matter, or a light refresher for those with previous exposure. There are already very good textbooks and papers providing full rigor; this is not one of them. We attempt to appeal a bit more to intuition and explain concepts in simple prose where possible.
+    This resource is intended to provide an accessible introdution to the subject matter, or a light refresher for
+    those with previous exposure. There are already very good textbooks and papers providing full rigor; this is not
+    one of them. We attempt to appeal a bit more to intuition and explain concepts in simple prose where possible.
 
-    This is a free, community-contributed resource, and while we do our best to keep it accurate and up-to-date, there may be errors, so caveat usor! If you find errors or omissions, please raise an `issue <https://github.com/yelircaasi/nlp-and-sp-cheatsheet/issues>`_ or `contribute <https://github.com/yelircaasi/nlp-and-sp-cheatsheet/blob/master/README.md>`_ a better definition!
+    This is a free, community-contributed resource, and while we do our best to keep it accurate and up-to-date, there
+    may be errors, so caveat lector! If you find errors or omissions, please raise an
+    `issue <https://github.com/yelircaasi/nlp-and-sp-cheatsheet/issues>`_ or
+    `contribute <https://github.com/yelircaasi/nlp-and-sp-cheatsheet/blob/master/README.md>`_
+    a better definition!
 
 .. toctree::
     :caption: Mathematical Preliminaries
